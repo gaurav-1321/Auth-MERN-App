@@ -1,0 +1,119 @@
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eaeaea;
+}
+
+
+/* Container */
+.container {
+  
+  background: #1e1e2f;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.container > h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+/* Form fields */
+.container div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #bbb;
+}
+
+.container input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #2a2a40;
+  color: #fff;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container input:focus {
+  border-color: #7d5fff;
+  box-shadow: 0 0 6px rgba(125, 95, 255, 0.6);
+}
+
+.container input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #7d5fff, #5a3ce8);
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  margin: 12px 0;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5a3ce8, #4220b0);
+  transform: scale(1.03);
+}
+
+/* Link */
+span {
+  font-size: 14px;
+  color: #aaa;
+  display: block;
+  text-align: center;
+}
+
+span a {
+  color: #7d5fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: color 0.2s ease;
+}
+
+span a:hover {
+  color: #9d84ff;
+}
